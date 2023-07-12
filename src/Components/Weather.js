@@ -6,7 +6,7 @@ export default function Weather() {
   const [load, setLoad] = useState(true);
   const getWeather = async () => {
     const data = await axios.get(
-      "http://139.59.49.153:80/kaniko/api/v1/weather"
+      "http://139.59.49.153:80/backend/api/v1/weather"
     );
     if (data) {
       setLoad(false);
